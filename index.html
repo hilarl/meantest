@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div id="slider">
+        <div class="section" style="background-size: cover; background: url('img/bg.jpg')">
+          <img id="logo" src="img/logo.png" />
+          <div id="main">
+            <div>
+              <h1>Life. Work. Balance.</h1>
+              <h3>Meanwise is a social discovery platform that encourages sharing and engaging with purposeful content.</h3>
+            </div>
+            <div>
+              <a class="store-btn" href="#">
+                <img class="store" src="img/appstore.png" />
+              </a>
+              <a class="store-btn" href="#">
+                <img class="store" src="img/playstore.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="section yourself">
+          <div class="infobar">
+            <h1>Get to be yourself</h1>
+            <h3>Create your own unique identity and connect with friends. Meanwise is used by talented individuals who have a story to tell or talent to show. Let your story be discovered by the world. </h3>
+          </div>
+          <div class="brand">
+            <img src="img/profile.png" />
+          </div>
+        </div>
+        <div class="section fit">
+            <div class="infobar">
+              <h1>Fit Where You Belong</h1>
+              <h3>Meanwise lets you publish your craft, stories, ideas and thoughts to channels with like-minded people. You can earn influence via the value of your ideas or quality of work. Boost your chances of being discovered or hired by potential employers.  </h3>
+            </div>
+            <div class="channel">
+              <img src="img/channel.png" />
+            </div>
+        </div>
+        <div class="section instant">
+          <div class="infobar">
+            <h1>Instant Opportunities</h1>
+            <h3>Traditional job searches centered around industries and job titles. Meanwise lets you discover jobs based on skill. Say goodbye to your old-fashioned resume. Apply for the job you want in seconds. It’s that simple. </h3>
+          </div>
+          <div class="video">
+            <img src="img/instant.png" />
+          </div>
+        </div>
+        <div class="section partners"><span class="business">Some section</span></div>
+    </div>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/vendors/jquery.easings.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/vendors/scrolloverflow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.8.2/jquery.fullPage.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+    <script>
+    $(document).ready(function() {
+      window.sr = ScrollReveal();
+      $('#slider').fullpage({
+        scrollBar: true,
+        afterRender: function() {
+          sr.reveal('.brand', {
+            duration: 1000,
+            reset: true
+          }, 50);
+          sr.reveal('.channel', {
+            duration: 1000,
+            reset: true
+          }, 50);
+          sr.reveal('.video', {
+            duration: 1000,
+            reset: true
+          }, 50);
+          sr.reveal('.business', {
+            duration: 1000,
+            reset: true
+          }, 50);
+        }
+      });
+    });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  height: 35px;
+}
+
+.yourself {
+  background: #25C2D6;
+}
+
+.fit {
+  background: #EF5350;
+}
+
+.instant {
+  background: #7E57C2;
+}
+
+.partners {
+  background: #FFA726;
+}
+
+.brand {
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  text-align: center;
+}
+
+.channel {
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  text-align: center;
+}
+
+.video {
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  text-align: center;
+}
+
+.infobar {
+  text-align: center;
+  width: 100%;
+  position: absolute;;
+  top: 0;
+}
+
+.infobar h1 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.infobar h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 200;
+  padding: 0 10%;
+  color: white;
+}
+
+#main {
+  color: white;
+  text-align: center;
+}
+
+#main h1 {
+  margin-top: -30px;
+  font-size: 80px;
+  margin-bottom: 0px;
+}
+
+#main h3 {
+  font-weight: 500;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+.store-btn {
+  text-decoration: none;
+  margin: 5px;
+}
+
+.store {
+  height: 43px;
+}
+
+@media only screen and (min-device-width: 720px) and (max-device-width: 2000px) {
+    .infobar h1 {
+      font-size: 80px;
+    }
+
+    .brand img {
+      height: 380px;
+    }
+
+    .channel img {
+      height: 360px;
+    }
+
+    .video img {
+      height: 360px;
+    }
+}
+
+@media only screen and (min-device-width: 20px) and (max-device-width: 640px) {
+
+    .infobar h1 {
+      font-size: 24px;
+    }
+
+    .brand img {
+      width: 95%;
+    }
+
+    .channel img {
+      width: 95%;
+    }
+
+    .video img {
+      width: 95%;
+    }
+
+    #main h1 {
+      font-size: 28px;
+      margin-top: 0;
+    }
+
+    #main h3 {
+      margin-top: 30px;
+      padding: 0 15px;
+      font-size: 16px;
+    }
+
+    .infobar h1 {
+      margin-top: 30px;
+    }
+
+    .infobar h3 {
+      font-size: 16px;
+      padding: 0 5%;
+    }
+}
